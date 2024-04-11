@@ -47,26 +47,29 @@
         transform: translate(-1000px);} */
 header {
   background-image: url(./img/pencil.jpg);
-  height: 100vh;
   text-align: center;
   background-position: 0px -100px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
 }
 header .box {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 43px;
+  padding-right: 12px;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 9px;
   opacity: 50%;
 }
 header .burger {
   position: absolute;
-  padding-right: 11px;
+  padding-right: 6px;
   z-index: 10;
+  font-size: 30px;
 }
 header h1 {
-  font-size: 65px;
+  font-size: 70px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 200px;
 }
@@ -79,9 +82,11 @@ header button {
   margin-top: 30px;
   color: white;
   background-color: #1d809f;
-  padding: 15px;
+  font-size: 18px;
+  padding: 14px;
   border: 1px solid #1d809f;
-  border-radius: 7px;
+  border-radius: 5px;
+  margin-bottom: 50px;
 }
 header .container {
   display: flex;
@@ -106,7 +111,8 @@ header .container {
 }
 
 .hero {
-  height: 70vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,14 +130,25 @@ header .container {
 .hero button {
   margin-top: 30px;
   color: white;
-  padding: 15px;
-  border: 1px solid black;
-  border-radius: 7px;
   background-color: black;
+  font-size: 18px;
+  padding: 14px;
+  border: 1px black;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.hero b:hover {
+  transform: translateY(-10px);
+}
+
+.br:hover {
+  transform: translateY(-10px);
 }
 
 .services {
-  height: 70vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #1d809f;
   color: white;
   padding-top: 50px;
@@ -156,7 +173,7 @@ header .container {
 }
 .services #serv {
   color: rgb(218, 165, 32);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .services .icons {
   display: flex;
@@ -203,11 +220,12 @@ header .container {
 }
 
 .scissors {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: url(./img/scissors.jpg);
-  height: 90vh;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px;
+  background-size: 100%;
+  background-position: 0px -120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,15 +239,24 @@ header .container {
   margin-top: 30px;
   color: white;
   background-color: #1d809f;
-  padding: 15px;
+  font-size: 18px;
+  padding: 14px;
   border: 1px solid #1d809f;
-  border-radius: 7px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.scissors b:hover {
+  transform: translateY(-10px);
+}
+
+#bb:hover {
+  transform: translateY(-10px);
 }
 
 .portfolio {
   position: relative;
   padding-top: 30px;
-  height: 130vh;
   text-align: center;
 }
 .portfolio #port {
@@ -241,7 +268,7 @@ header .container {
 }
 .portfolio h2 {
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .portfolio .po {
   color: #d9b216;
@@ -253,16 +280,16 @@ header .container {
 }
 .portfolio .offers {
   margin-left: 40px;
+  margin-bottom: 40px;
 }
 .portfolio #projects {
   padding-top: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
+  font-size: medium;
 }
 .portfolio .stat {
   position: absolute;
-  bottom: 500px;
-  left: 250px;
+  bottom: 450px;
+  left: 240px;
   text-align: left;
   color: white;
 }
@@ -271,8 +298,8 @@ header .container {
 }
 .portfolio .ice {
   position: absolute;
-  bottom: 500px;
-  left: 730px;
+  bottom: 450px;
+  left: 720px;
   text-align: left;
   color: white;
 }
@@ -281,8 +308,8 @@ header .container {
 }
 .portfolio .straw {
   position: absolute;
-  bottom: 180px;
-  left: 250px;
+  bottom: 160px;
+  left: 240px;
   text-align: left;
   color: white;
 }
@@ -291,25 +318,27 @@ header .container {
 }
 .portfolio .work {
   position: absolute;
-  bottom: 180px;
-  left: 730px;
+  bottom: 160px;
+  left: 720px;
   text-align: left;
   color: white;
 }
 .portfolio h3 {
   padding-bottom: 5px;
 }
+.portfolio #pa {
+  font-size: medium;
+}
 
 .cta {
   background-color: #1d809f;
-  height: 60vh;
 }
 .cta h2 {
   text-align: center;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 .cta .buttons {
   text-align: center;
@@ -318,15 +347,17 @@ header .container {
        column-gap: 2em;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 .cta #b-one {
   margin-top: 30px;
   color: black;
   background-color: white;
-  padding: 15px;
-  border: 1px solid white;
-  border-radius: 7px;
-  padding-right: -20px;
+  font-size: 18px;
+  padding: 14px;
+  border: 1px white;
+  border-radius: 5px;
+  margin-bottom: 50px;
 }
 .cta #b-one:hover {
   transform: translateY(-10px);
@@ -334,25 +365,25 @@ header .container {
 .cta #b-two {
   margin-top: 30px;
   color: white;
-  background-color: rgb(15, 14, 14);
-  padding: 15px;
-  border: 1px solid rgb(15, 14, 14);
-  border-radius: 7px;
+  background-color: black;
+  font-size: 18px;
+  padding: 14px;
+  border: 1px black;
+  border-radius: 5px;
+  margin-bottom: 50px;
 }
 .cta #b-two:hover {
   transform: translateY(-10px);
 }
 
 .map {
-  background-image: url(./img/map.jpeg);
-  height: 60vh;
   background-position: 0px -320px;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 footer {
-  height: 25vh;
   text-align: center;
 }
 
@@ -366,23 +397,23 @@ footer {
        column-gap: 2em;
 }
 .foot .ter {
-  height: 70px;
-  width: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   background-color: #1d809f;
 }
 .foot .ter img {
-  height: 48px;
   width: 48px;
 }
 .foot img {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .copy {
   padding-top: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
+  font-size: medium;
 }/*# sourceMappingURL=style.css.map */
